@@ -1,0 +1,38 @@
+后台管理系统
+	文章管理列表
+	文章发布程序
+	文章修改程序
+	文章删除程序
+前端展示系统
+	文章列表页
+	文件内容页
+1.数据库表设计
+	全部非空
+	id int comment '文章编号' 主键 自增
+	title char(100) comment '文章标题'
+	author char(50) comment '文章作者'
+	description varchar(200) comment '文章简介'
+	centent text comment '文章内容'
+	dateline int comment '文章时间' 默认0
+2.创建各功能对应文件
+	article----根目录
+		admin---后台系统目录
+			article.add.php---文章添加界面
+			article.add.handle.php---文章添加处理程序
+			article.modify.php---文章修改界面
+			article.modify.handle.php---文章修改处理程序
+			article.del.handle.php---文章修改处理程序
+			article.manage.php---文章管理列表
+		article.list.php---前台文章展示列表
+		article.show.php---前台文章内容页
+		config.php---配置文件
+		connect.php---MYSQL里连接初始化程序
+3.配置文件和初始化文件
+	配置文件
+		定义常量 主机名 用户名 密码
+	初始化文件
+		连接数据库 选择数据库 设置字符集 判断是否成功
+4.创建文章发布页面
+5.创建文章管理页面
+6.创建文章修改页面
+	实现功能删除-修改
