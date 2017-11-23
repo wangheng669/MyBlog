@@ -1,0 +1,29 @@
+{include file='admin/leftmenu.html'}
+		<div id="right-content">
+			<h2>发布文章</h2>
+			<div class="content">
+				<form action="admin.php?controller=admin&method=articleadd" method="post" name="all">
+					<div class="data">
+						<label>标题</label>
+						<input type="text"  style='display:none' name='id'  value="{$data.id|default:''}">
+						<input type="text" name="title" placeholder="标题"  value="{$data.title|default:''}">
+					</div>
+					<div class="data">
+						<label>作者</label>
+						<input type="text" name="author" placeholder="作者" value="{$data.author|default:''}">
+					</div>
+					<div class="data">
+						<label>简介</label>
+						<textarea cols="121" rows="10" name="description">{$data.description|default:''}</textarea>
+					</div>
+					<div class="data">
+						<label>内容</label>
+						<textarea cols="121" rows="23" name="content">{$data.content|default:''}</textarea>
+					</div>
+						<button class="submit" >提交</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

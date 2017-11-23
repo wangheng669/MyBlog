@@ -1,0 +1,13 @@
+{include file='index/leftmenu.html'}
+		<div class="right_article">
+			<div class='user_article'>
+				<div class='user_title'>
+					<h2>{$data.title|default:''}</h2>
+					<p>{$data.dateline|default:''}</p>
+				</div>
+				<div class='user_description'><i style='display: none;'>{$data.id|default:''}</i><p>{$data.content|default:''}</p></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

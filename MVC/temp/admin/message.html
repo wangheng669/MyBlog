@@ -1,0 +1,24 @@
+		{include file='admin/leftmenu.html'}
+		<div id="right-content">
+			<h2>评论管理列表</h2>
+			<div class="list">
+			<span>总共有{$articlenum}条评论</span>
+				<dl>
+					<dt>
+						<span class="list-id">编号</span>
+						<span class="list-title">标题</span>
+						<span class="list-handle">操作</span>
+					</dt>
+					{foreach $data as $val}
+			        <dd>
+				        <span class="list-id">{$val.id}</span>
+						<span class="list-title">{$val.content}</span>
+						<span class="list-handle"><a href="admin.php?controller=admin&method=articledel&id={$val.id}&type=message">删除</a></span>
+					</dd>
+			    	{/foreach}
+				</dl>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

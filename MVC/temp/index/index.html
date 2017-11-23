@@ -1,0 +1,14 @@
+{include file='index/leftmenu.html'}
+		<div class="right_article">
+			{foreach $data as $val}
+			<div class='user_article'>
+				<div class='user_title'>
+					<h2>{$val.title}</h2>
+				</div>
+				<div class='user_description'><i style='display: none;'>{$val.id}</i><p>{$val.description}</p></div>
+			</div>
+			{/foreach}
+		</div>
+	</div>
+</body>
+</html>

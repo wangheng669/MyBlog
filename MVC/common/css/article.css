@@ -1,0 +1,141 @@
+.active{
+	background: #0561A2;
+	color:#fff;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+#main{
+	width: 1395px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#top{
+	width: 1395px;
+	height: 90px;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 10px;
+	line-height: 90px;
+	padding-left: 30px;
+}
+#top h1{
+	font-size: 40px;
+	display: inline-block;
+	margin-right: 10px;
+}
+#top span{
+	font-size: 28px;
+}
+#left-list{
+	width: 190px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	float: left;
+	overflow: hidden;
+}
+#left-list h2{
+	background: #F5F5F5;
+	height: 45px;
+	padding-left: 18px;
+}
+#left-list h2 i{
+	line-height: 45px;
+}
+#left-list ul li{
+	cursor: pointer;
+	padding-left: 18px;
+	height: 48px;
+	line-height: 48px;
+}
+#left-list ul li:hover{
+	background: #0561A2;
+	color:#fff;
+}
+#right-content{
+	overflow: hidden;
+	float: right;
+	border: 1px solid #ccc;
+	width: 1180px;
+	border-radius: 5px;
+}
+#right-content h2{
+	background: #F5F5F5;
+	height: 70px;
+	padding-left: 18px;
+	line-height: 70px;
+}
+.content{
+	height: 681px;
+	margin:20px 0 0 135px;
+}
+.content .data label{
+	position: absolute;
+	font-weight: bolder;
+	top: 15px;
+}
+.content input{
+	padding-left: 10px;
+	border-radius: 5px;
+	border:1px solid #ccc;
+	width: 858px;
+	height: 40px;
+	margin-left: 76px;
+}
+.data{
+	position: relative;
+	margin-bottom: 10px;
+}
+textarea{
+	border:1px solid #ccc;
+	margin-left: 76px;
+	border-radius: 5px;
+	resize: none;
+}
+.submit{
+	border-radius: 5px;
+	background: none;
+	border:1px solid #ccc;
+	padding: 10px;
+	margin-left: 76px;
+}
+
+
+
+.list{
+	width: 1001px;
+	height: 530px;
+	border-top: 1px solid #ccc;
+	margin: 20px auto;
+}
+.list dl dt{
+	height:36px;
+	border-bottom: 2px solid #ccc;
+	line-height: 36px; 
+}
+.list dl span{
+	display: inline-block;
+}
+.list dl dd{
+	height: 35px;
+	line-height: 35px;
+	border-bottom: 1px solid #ccc;
+}
+.list dl dd a{
+	color: #0561a2;
+}
+.list-id{
+	margin-left: 7px;
+	width: 100px;
+	overflow: hidden;
+}
+.list-title{
+	margin-left: 20px;
+	width: 571px;
+	overflow: hidden;
+	height: 35px;
+}
+.list-handle{
+	margin-left: 30px;
+	overflow: hidden;
+}

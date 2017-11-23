@@ -1,0 +1,29 @@
+{include file='index/leftmenu.html'}
+		<div class="right_article">
+			<div class='usermessage' id='usermessage'>
+				<div class='message_head'>
+					<img src='common/img/head.png'>
+				</div>
+				<form action='index.php?controller=index&method=postcomments' method='post' id='addCommentForm'>
+					<input type='text' name='username' placeholder='请输入你的昵称' id='username'>
+					<textarea cols='45' rows='3' id='usercontent' name="content"></textarea>
+					<button class='issue' id='submit'>发布</button>
+					<span class='error' style='color: red;display: none;'>输入不合法</span>
+				</form>
+			</div>
+			{if $data neq ""}
+				{foreach $data as $val}
+				<div class='usermessage'>
+					<div class='message_head'>
+						<img src='common/img/head.png'>
+					</div>
+					<p style='margin-left: 140px;'>{$val.username|default:''}</p>
+					<p>{$val.content|default:''}</p>
+					<span>{$val.face|date_format:"%Y-%m-%d %H:%M:%S"|default:''}</span>
+				</div>
+				{/foreach}
+			{/if}
+		</div>
+	</div>
+</body>
+</html>
